@@ -6,6 +6,7 @@ app = Flask(__name__)
 app.debug = True
 
 ACCESS_KEY = os.environ.get('MAPBOX_ACCESSKEY')
+print('key', ACCESS_KEY)
 
 @app.route('/')
 def index():
